@@ -37,3 +37,21 @@ Acesse o documento
 
 GET https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubanco/7e0e6c9618b8535bc4649ea3c44771ba
 
+
+# Criando Queries (Views) Listar todos os documentos
+
+    "views": {
+    "todos_fornecedores": {
+      "map": "function (doc) 
+                if(doc.class=="fornrcedor")  
+                emit(doc._id, doc);
+                }"
+    },
+    "todos_produtos": {
+      "map": "function (doc) {
+      if(doc.class=="produto\")
+      emit(doc._id, doc);
+      }"
+      
+Acessando as queries 
+    }
