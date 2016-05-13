@@ -18,6 +18,7 @@ POST https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubanco
     
 
     {
+    "class": "fornecedor"
     "cnpj": "010203",
     "nome": "china tecidos reciclaveis",
     "email": "?@?.com",
@@ -54,7 +55,7 @@ GET https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubanco/7
       }"
       }
       
-Acessando as queries 
+Acessando as Views 
 
 https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubd/_design/q/_view/todos_produtos?limit=100&reduce=false
 
@@ -63,3 +64,17 @@ https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubd/_design/
 #Listando um documento específico
 
 
+# Lucene Queries
+
+POST  https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubd/_find
+
+    {
+      "selector": {
+        "class": "fornecedor",
+        "cnpj": "010203",
+        "email": "?@?.com"
+      },
+      "fields": [
+      	"profile"
+      ]
+    }
