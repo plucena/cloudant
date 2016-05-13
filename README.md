@@ -52,6 +52,10 @@ GET https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubanco/7
       if(doc.class=="produto\")
       emit(doc._id, doc);
       }"
+      }
       
 Acessando as queries 
-    }
+
+https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubd/_design/q/_view/todos_produtos?limit=100&reduce=false
+
+https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubd/_design/q/_view/todos_fornecedores?limit=100&reduce=false
