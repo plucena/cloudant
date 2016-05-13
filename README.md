@@ -1,6 +1,6 @@
 # Cloudant
 
-1. Edite a permissão para leitura/escrita
+1. Edite a permissão anonima para leitura/escrita/admin
 
 # Criando alguns documentos
 
