@@ -1,4 +1,4 @@
-# cloudant
+# Cloudant
 
 1. Edite a permissão para leitura/escrita
 
