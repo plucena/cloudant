@@ -68,7 +68,7 @@ Adiconando uma nova view
 
     "produto": {
       "map": "function (doc) {
-            if(doc.codigoDeBarras && doc.class==\"produto\")   
+            if(doc.codigoDeBarras && doc.class=="produto")   
                 emit(doc.codigoDeBarras, doc.nome);
         }"
     }
