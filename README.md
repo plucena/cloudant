@@ -58,9 +58,9 @@ GET https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubd/7e0e
       
 Acessando as Views 
 
-https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubd/_design/q/_view/todos_produtos?limit=100&reduce=false
+GET https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubd/_design/q/_view/todos_produtos?limit=100&reduce=false
 
-https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubd/_design/q/_view/todos_fornecedores?limit=100&reduce=false
+GET https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubd/_design/q/_view/todos_fornecedores?limit=100&reduce=false
 
 #Listando um documento específico
 
@@ -74,6 +74,31 @@ Adiconando uma nova view
     }
 
 GET https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meudb/_design/q/_view/produto?key="64723673426726372424"
+
+# Agrupando dados com Reduce
+
+Criar alguns documentos: 
+
+POST https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meudb
+
+    {
+     "class":"venda",
+     "cod_prod": "23223322332232",
+     "cod_cliente": 222,
+     "total": 100
+    }
+    
+    {
+     "class":"venda",
+     "cod_prod": "23223322332232",
+     "cod_cliente": 222,
+     "total": 100
+    }
+
+Criar Map/Reduce
+
+
+
 
 # Lucene Queries
 
