@@ -43,7 +43,7 @@ Diego Roso Da Silva
     
 ### 2. Query with map reduce to sum salaries:
 
-GET: 
+GET: `https://a52b0bbb-d32c-4423-8d9b-240e08d9cfe1-bluemix.cloudant.com/grupo2/_design/roles/_view/list_writers?limit=20&reduce=false`
 
 ```
 function (doc) {
