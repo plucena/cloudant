@@ -63,6 +63,16 @@ https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubd/_design/
 
 #Listando um documento específico
 
+Adiconando uma nova view
+
+    "produto": {
+      "map": "function (doc) {
+            if(doc.codigoDeBarras && doc.class==\"produto\")   
+                emit(doc.codigoDeBarras, doc.nome);
+        }"
+    }
+
+GET https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meudb/_design/q/_view/produto?key=%2264723673426726372424%22
 
 # Lucene Queries
 
