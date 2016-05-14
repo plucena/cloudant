@@ -43,6 +43,8 @@ Diego Roso Da Silva
     
 ### 2. Query with map reduce to sum salaries:
 
+GET: 
+
 ```
 function (doc) {
   if(doc.role=="writer")  
@@ -50,3 +52,11 @@ function (doc) {
 }
 ```
 
+### 3. Lucene Queries
+
+#### 3.1. Lucene Query to index all data
+
+    {
+        "type": "text",
+        "index": {}
+    }
