@@ -39,7 +39,9 @@ function (doc) {
         if(doc.class=="funcionario")
             emit(doc._id, doc.cargo);
 }
-***************REDUCE
+
+
+***************LUCENE
 {
 "selector": {
 "class": "funcionario",
