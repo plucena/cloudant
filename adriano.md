@@ -1,3 +1,8 @@
+#Integrante
+Nome: Adriano Daronco
+RE: 139.523.528-70
+id: ahdaronc
+
 #Criando Documentos
 https://04b1e599-9b5a-44f9-8e97-b9ce159f9c03-bluemix.cloudant.com/meudb/4375fbac73844826db929c0194878f04
 {
@@ -35,4 +40,11 @@ https://04b1e599-9b5a-44f9-8e97-b9ce159f9c03-bluemix.cloudant.com/meudb/d58d5bc7
 "endereco_Logradouro": "Rua da Boiada 666",
 "endereco_CEP": "123456789",
 "ativo": true
+}
+
+#Criando Views
+function (doc) {
+   if(doc.codigoDeBarras && doc.class=="produto" && doc.nome=="Tecido BRANCO Verao 2016")   
+   result= "Tipo: " + doc.tipo + " - Descr: " + doc.descricao;
+   emit(doc.codigoDeBarras, result);
 }
