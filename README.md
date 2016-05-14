@@ -1,4 +1,5 @@
 # Cloudant
+http://guide.couchdb.org/draft/
 
 1. Edite a permissão anonima para leitura/escrita/admin
 
@@ -72,7 +73,7 @@ Adiconando uma nova view
         }"
     }
 
-GET https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meudb/_design/q/_view/produto?key=%2264723673426726372424%22
+GET https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meudb/_design/q/_view/produto?key="64723673426726372424"
 
 # Lucene Queries
 
