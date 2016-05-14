@@ -100,7 +100,7 @@ Criar Map/Reduce
 
     "totalvendas": {
       "map": "function (doc) {  
-            if(doc.class==\"venda\")
+            if(doc.class=="venda")
                 emit(doc._id, doc.total);
                 }",
       "reduce": "_sum"
