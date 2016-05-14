@@ -45,7 +45,15 @@ POST: https://17d9d72b-8de6-4626-9f9f-4f79be099505-bluemix.cloudant.com/novodb/_
 
 ## 2. Query com Reduce:
 
+URL: https://17d9d72b-8de6-4626-9f9f-4f79be099505-bluemix.cloudant.com/novodb/_design/totaldevendas/_view/totalroupa?limit=20&reduce=true&group_level=0
 
+    "total_roupas": {
+        "map": "function (doc) {  
+                    if(doc.class=="roupa")
+                        emit(doc._id, doc.valorUnidade);
+                }",
+        "reduce": "_sum"
+    }
 
 ## 3. Query com Lucene:
 
