@@ -43,7 +43,7 @@ Diego Roso Da Silva
     
 ### 2. Query with map reduce to sum salaries:
 
-GET: `https://a52b0bbb-d32c-4423-8d9b-240e08d9cfe1-bluemix.cloudant.com/grupo2/_design/roles/_view/list_writers?limit=20&reduce=false`
+GET: https://a52b0bbb-d32c-4423-8d9b-240e08d9cfe1-bluemix.cloudant.com/grupo2/_design/roles/_view/list_writers?limit=20&reduce=false
 
 ```
 function (doc) {
@@ -56,7 +56,24 @@ function (doc) {
 
 #### 3.1. Lucene Query to index all data
 
+POST: https://a52b0bbb-d32c-4423-8d9b-240e08d9cfe1-bluemix.cloudant.com/meudb/_index
+
     {
         "type": "text",
         "index": {}
+    }
+    
+SELECT title, body FROM writer WHERE salary = 100
+
+POST  https://a52b0bbb-d32c-4423-8d9b-240e08d9cfe1-bluemix.cloudant.com/meudb/_find
+
+
+    {
+    "selector": {
+    "role": "writer",
+    "salary": 100
+    },
+     "fields": [
+        "title", "body"
+    ]
     }
