@@ -36,7 +36,7 @@ Resultado do post:
 {"ok":true,"id":"4375fbac73844826db929c01946cb3c8","rev":"1-6990e4825774b7b4b2aadab01028024e"}
 {"ok":true,"id":"dd02e423ca83273b5f5f5c4927866f29","rev":"1-0f5f0bf746229a9df55f7970fbac8991"}
 
-Query com reduce
+Query com reduce:
 -----------------------------
 
 {
@@ -51,7 +51,7 @@ Query com reduce
   "language": "javascript"
 }
 
-Query com lucene
+Query com lucene:
 -- -----------------------------
 
 {
