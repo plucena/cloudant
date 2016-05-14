@@ -3,7 +3,9 @@ Gabriella Nunes Miranda
 Juliana Matias Machado
 Katsumi Arackawa Junior
 
-## Insert com 3 Jasons:
+## 1. Insert com 3 Jasons:
+
+POST: https://17d9d72b-8de6-4626-9f9f-4f79be099505-bluemix.cloudant.com/novodb/_all_docs
 
 {
   "_id": "00998c0108bf1461dd77907acb7e6ee4",
@@ -41,11 +43,9 @@ Katsumi Arackawa Junior
   "codigoDeBarras": "789789789789"
 }
 
-https://17d9d72b-8de6-4626-9f9f-4f79be099505-bluemix.cloudant.com/novodb/_all_docs
-
-##Query com Reduce:
+## 2. Query com Reduce:
 
 
 
-##Query com Lucene:
+## 3. Query com Lucene:
 
