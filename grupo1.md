@@ -1,9 +1,10 @@
-Nome dos Integrantes:
+## Nome dos Integrantes:
 Gabriella Nunes Miranda
 Juliana Matias Machado
 Katsumi Arackawa Junior
 
-Insert com 3 Jasons:
+## Insert com 3 Jasons:
+
 {
   "_id": "00998c0108bf1461dd77907acb7e6ee4",
   "_rev": "1-6da6c6de2a8a53017fcaffb8ba16c535",
@@ -40,10 +41,11 @@ Insert com 3 Jasons:
   "codigoDeBarras": "789789789789"
 }
 
+https://17d9d72b-8de6-4626-9f9f-4f79be099505-bluemix.cloudant.com/novodb/_all_docs
 
-Query com Reduce:
+##Query com Reduce:
 
 
 
-Query com Lucene:
+##Query com Lucene:
 
