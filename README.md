@@ -44,14 +44,14 @@ GET https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubd/7e0e
 
     "views": {
     "todos_fornecedores": {
-      "map": "function (doc) 
+      "map": "function (doc) {
                 if(doc.class=="fornrcedor")  
                 emit(doc._id, doc);
                 }"
     },
     "todos_produtos": {
       "map": "function (doc) {
-      if(doc.class=="produto\")
+      if(doc.class=="produto")
       emit(doc._id, doc);
       }"
       }
