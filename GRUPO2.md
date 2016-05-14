@@ -69,11 +69,11 @@ POST  https://a52b0bbb-d32c-4423-8d9b-240e08d9cfe1-bluemix.cloudant.com/meudb/_f
 
 
     {
-    "selector": {
-    "role": "writer",
-    "salary": 100
-    },
-     "fields": [
-        "title", "body"
-    ]
+        "selector": {
+            "role": "writer",
+            "salary": 100
+        },
+        "fields": [
+            "title", "body"
+        ]
     }
