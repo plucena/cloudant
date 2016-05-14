@@ -74,6 +74,6 @@ POST  https://a52b0bbb-d32c-4423-8d9b-240e08d9cfe1-bluemix.cloudant.com/grupo2/_
             "salary": 100
         },
         "fields": [
-            "title", "body"
+            "_id", "title", "body"
         ]
     }
