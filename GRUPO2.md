@@ -4,7 +4,7 @@ Diego Roso Da Silva
 
 ### 1. Requests to add sample data:
 
-  POST: https://a52b0bbb-d32c-4423-8d9b-240e08d9cfe1-bluemix.cloudant.com/meudb
+  POST: https://a52b0bbb-d32c-4423-8d9b-240e08d9cfe1-bluemix.cloudant.com/grupo2
   
     {
         "userId": 1,
