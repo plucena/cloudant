@@ -50,6 +50,10 @@ function (doc) {
 }
 
 #Lucine Query
+Post Lucine Query:
+https://04b1e599-9b5a-44f9-8e97-b9ce159f9c03-bluemix.cloudant.com/meudb/_find
+
+Query:
 {
 "selector": {
 "class": "fornecedor",
