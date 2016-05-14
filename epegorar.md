@@ -1,9 +1,11 @@
 
 Evandro Pegorari
+-
 
 URL do banco: https://4e0f134a-7fa9-4ef3-a4b6-96b3dc7e1630-bluemix.cloudant.com/meudb/
 
 JSONs
+-
 
 {
  "class":"sensor",
