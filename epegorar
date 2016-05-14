@@ -1,19 +1,25 @@
 {
- "class":"venda",
- "cod_prod": "124",
- "cod_cliente": 3,
- "total": 100
+ "class":"sensor",
+ "serial": "000124",
+ "unidade": "temperatura",
+ "valor": 36
 },
 {
- "class":"venda",
- "cod_prod": "23223322332232",
- "cod_cliente": 3,
- "total": 200
+ "class":"sensor",
+ "serial": "000121",
+ "unidade": "temperatura",
+ "valor": 38.6
 },
 {
- "class":"venda",
- "cod_prod": "123",
- "cod_cliente": 3,
- "total": 300
+ "class":"sensor",
+ "serial": "000333",
+ "unidade": "temperatura",
+ "valor": 40
+},
+{
+ "class":"sensor",
+ "serial": "000333",
+ "unidade": "pressao",
+ "valor": 15
 }
 
