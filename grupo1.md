@@ -1,7 +1,7 @@
 ## Nome dos Integrantes:
-Gabriella Nunes Miranda
-Juliana Matias Machado
-Katsumi Arackawa Junior
+- Gabriella Nunes Miranda
+- Juliana Matias Machado
+- Katsumi Arackawa Junior
 
 ## 1. Insert com 3 Jasons:
 
