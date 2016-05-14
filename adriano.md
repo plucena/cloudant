@@ -59,3 +59,10 @@ function (doc) {
     "nome", "class", "ativo"
 ]
 }
+
+Result Lucine Query:
+{"docs":[
+{"nome":"Americana tecidos","class":"fornecedor","ativo":true}
+],
+"bookmark": "g2wAAAABaANkAChkYmNvcmVAZGIyLmJtLWRhbC1zdGFuZGFyZDIuY2xvdWRhbnQubmV0bAAAAAJuBAAAAADAbgQA____32poAkY__81TAAAAAGECag"}
+
