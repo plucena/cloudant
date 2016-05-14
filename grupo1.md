@@ -49,3 +49,26 @@ POST: https://17d9d72b-8de6-4626-9f9f-4f79be099505-bluemix.cloudant.com/novodb/_
 
 ## 3. Query com Lucene:
 
+POST: https://17d9d72b-8de6-4626-9f9f-4f79be099505-bluemix.cloudant.com/novodb/_index
+
+        {
+            "type": "text",
+            "index": {}
+        }
+        
+
+
+URL: https://17d9d72b-8de6-4626-9f9f-4f79be099505-bluemix.cloudant.com/novodb/_find
+
+        {
+        "selector": {
+            "class": "sapato",
+            "codigoDeBarras": "456456456456"
+        },
+        "fields": [
+                "nome", "tipo", "descricao"
+                ]
+        }
+
+
+
