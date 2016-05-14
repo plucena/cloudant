@@ -49,6 +49,16 @@ function (doc) {
    emit(doc.codigoDeBarras, result);
 }
 
+#Map reduce 
+Retorna o total de vendas para o cliente com codigo 222
+function (doc) {
+  if(doc.class=="venda" && doc.cod_cliente=="222")
+  emit(doc._id, doc.total);
+}
+
+Result do Map Reduce:
+
+
 #Lucine Query
 Post Lucine Query:
 https://04b1e599-9b5a-44f9-8e97-b9ce159f9c03-bluemix.cloudant.com/meudb/_find
