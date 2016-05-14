@@ -50,6 +50,7 @@ function (doc) {
 }
 
 #Map reduce 
+https://04b1e599-9b5a-44f9-8e97-b9ce159f9c03-bluemix.cloudant.com/meudb/_design/lista_vendas/_view/lista_total_vendas_Cliente_222?limit=20&reduce=true&group_level=0
 Retorna o total de vendas para o cliente com codigo 222
 function (doc) {
   if(doc.class=="venda" && doc.cod_cliente=="222")
@@ -57,7 +58,9 @@ function (doc) {
 }
 
 Result do Map Reduce:
-
+{"rows":[
+{"key":null,"value":200}
+]}
 
 #Lucine Query
 Post Lucine Query:
