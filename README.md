@@ -76,15 +76,18 @@ POST https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubd/_in
     }
 
 
+SELECT nome, tipo, descricao FROM produto WHERE codigoDeBarras="3554436325667223"
+
 POST  https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubd/_find
 
+
     {
-      "selector": {
-        "class": "fornecedor",
-        "cnpj": "010203",
-        "email": "?@?.com"
-      },
-      "fields": [
-      	"telefone"
-      ]
+    "selector": {
+    "class": "produto",
+    "codigoDeBarras": "3554436325667223"
+    },
+     "fields": [
+        "nome", "tipo", "descricao"
+    ]
+}
     }
