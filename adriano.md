@@ -48,3 +48,14 @@ function (doc) {
    result= "Tipo: " + doc.tipo + " - Descr: " + doc.descricao;
    emit(doc.codigoDeBarras, result);
 }
+
+#Lucine Query
+{
+"selector": {
+"class": "fornecedor",
+"nome": "Americana tecidos"
+},
+ "fields": [
+    "nome", "class", "ativo"
+]
+}
