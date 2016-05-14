@@ -1,0 +1,19 @@
+{
+ "class":"venda",
+ "cod_prod": "124",
+ "cod_cliente": 3,
+ "total": 100
+},
+{
+ "class":"venda",
+ "cod_prod": "23223322332232",
+ "cod_cliente": 3,
+ "total": 200
+},
+{
+ "class":"venda",
+ "cod_prod": "123",
+ "cod_cliente": 3,
+ "total": 300
+}
+
