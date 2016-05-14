@@ -33,12 +33,13 @@ Nomes: Andre Rogério Gonçalves
 "salario": 7000.00,
 "setor": "gerencia"
 }
-***************queries
+
+***************REDUCE
 function (doc) {  
         if(doc.class=="funcionario")
             emit(doc._id, doc.cargo);
 }
-
+***************REDUCE
 {
 "selector": {
 "class": "funcionario",
