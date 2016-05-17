@@ -64,7 +64,7 @@ GET https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubd/_des
 
 GET https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubd/_design/q/_view/todos_fornecedores?limit=100&reduce=false
 
-#Listando um documento específico
+#4. Listando um documento específico
 
 Adiconando uma nova view
 
@@ -78,7 +78,7 @@ Adiconando uma nova view
 
 GET https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meudb/_design/q/_view/produto?key="64723673426726372424"
 
-# 4. Agrupando dados com Reduce
+# 5. Agrupando dados com Reduce
 
 Criar alguns documentos: 
 
@@ -112,7 +112,7 @@ Consultar reduce
 
 GET https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubd/_design/q/_view/totalvendas?reduce=true
 
-# 5. Lucene Queries
+# 6. Lucene Queries
 
 Index all Fields 
 
@@ -139,5 +139,19 @@ POST  https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubd/_f
     ]
     }
     
-# 6. Formatando JSON com Lists
+# 7. Formatando JSON com Lists
+
+    "lists": {
+        "MEUFORMATADOR1": "
+        function (head,req) { 
+        start({'headers': {'Content-type': 'application/json' }});  
+        var i=0; send('['); 
+        var row; 
+        while(row = getRow()) { 
+            if(i>0) send(',');  
+            send(toJSON(row.value)); 
+            i++; 
+            } 
+            send(']'); }"
+        }
 
