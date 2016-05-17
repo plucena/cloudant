@@ -1,9 +1,11 @@
 # Cloudant
 http://guide.couchdb.org/draft/
 
-1. Edite a permissão anonima para leitura/escrita/admin
+# 1. Setup
 
-# Criando alguns documentos
+Edite a permissão anonima para leitura/escrita/admin
+
+# 2. Criando alguns documentos
 
 POST https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubd
 
@@ -40,7 +42,7 @@ Acesse o documento
 GET https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubd/7e0e6c9618b8535bc4649ea3c44771ba
 
 
-# Criando Queries (Views) Listar todos os documentos
+# 3. Criando Queries (Views) Listar todos os documentos
 
     "views": {
     "todos_fornecedores": {
@@ -76,7 +78,7 @@ Adiconando uma nova view
 
 GET https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meudb/_design/q/_view/produto?key="64723673426726372424"
 
-# Agrupando dados com Reduce
+# 4. Agrupando dados com Reduce
 
 Criar alguns documentos: 
 
@@ -110,7 +112,7 @@ Consultar reduce
 
 GET https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubd/_design/q/_view/totalvendas?reduce=true
 
-# Lucene Queries
+# 5. Lucene Queries
 
 Index all Fields 
 
@@ -137,3 +139,5 @@ POST  https://d7a497fa-eec2-4ca7-809d-c8215a3c12cc-bluemix.cloudant.com/meubd/_f
     ]
     }
     
+# 6. Formatando JSON com Lists
+
